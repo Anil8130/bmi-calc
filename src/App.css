@@ -1,0 +1,95 @@
+
+*{
+overflow-x: hidden;
+}
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 90%;
+  margin: 5%;
+  background-color: #f2f2f2;
+}
+.row{
+  width: 80%;
+  display: flex;
+  padding: 40px;
+}
+.col-md-6{
+  width: 50%;
+  padding: 10px 20px;
+}
+.col-md-6 input{
+  width: 70%;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  color:#282c34;
+  font-size: calc(12px + 2vmin)/12;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #0D3655;
+}
+.col-md-6 input:focus{
+  background-color: transparent;
+}
+.col-md-6 input:active{
+  background-color: transparent;
+}
+input:-internal-autofill-selected{
+  background-color: transparent;
+}
+.col-md-6 ul{
+  width: 90%;
+  margin: 0 auto;
+}
+.col-md-6 ul li {
+  background-color: #282c34;
+  padding: 10px;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.col-md-6 .btn {
+  padding: 20px 35px;
+  font-size: 14px;
+  margin: 10px;
+  font-weight: 700;
+  border-radius: 25px;
+  background: #eD2532;
+  color: #fff;
+  border: 1px solid #eD2532;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+}
+.col-md-6 .btn:hover{
+  background-color: #910009;
+}
+.col-md-6 .BmiResult {
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 2px solid #4f0714;
+}
+@media(max-width:600px){
+  .row {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
+  .col-md-6 {
+    width: 90%;
+    padding: 10px 20px;
+}
+  .col-md-6 ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+}
